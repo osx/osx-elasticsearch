@@ -2,5 +2,6 @@
 # Cookbook Name:: osx-elasticsearch
 # Recipe:: default
 #
-include_recipe 'homebrew'
 package 'elasticsearch'
+
+include_recipe 'osx-elasticsearch::plugins'
