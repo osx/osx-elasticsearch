@@ -31,7 +31,7 @@ end
 
 def load_current_resource
   @current_resource = Chef::Resource::OsxElasticsearchPlugin.new @new_resource.name
-  @current_resource.name = @new_resource.name
+  @current_resource.name(@new_resource.name)
   @current_resource.exists = plugin_exists? @new_resource.name
 end
 

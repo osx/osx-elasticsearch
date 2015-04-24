@@ -5,4 +5,4 @@ provides :osx_elasticsearch_plugin, os: 'mac_os_x'
 
 attribute :name, :kind_of => String, :name_attribute => true
 
-attr_accessor :name, :exists
+attr_accessor :exists
