@@ -2,6 +2,8 @@
 # Cookbook Name:: osx-elasticsearch
 # Recipe:: default
 #
+include_recipe 'osx-java'
+
 package 'elasticsearch'
 
 include_recipe 'osx-elasticsearch::plugins'

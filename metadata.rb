@@ -6,6 +6,8 @@ description      'Installs Elasticsearch on OS X using Hombrew.'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '0.2.2'
 
+depends 'osx-java'
+
 recipe 'osx-elasticsearch::default', description
 recipe 'osx-elasticsearch::plugins', 'Installs Elasticsearch plugins.'
 
